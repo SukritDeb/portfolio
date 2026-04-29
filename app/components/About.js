@@ -15,15 +15,18 @@ export default function About() {
           className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16"
         >
           <div className="md:col-span-4">
-            <span className="text-xs uppercase tracking-widest text-neutral-400 dark:text-neutral-500 font-mono">
+            {/* Section Label — Machine / Monospace */}
+            <span className="font-mono text-xs uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
               About
             </span>
           </div>
           <div className="md:col-span-8">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-neutral-900 dark:text-neutral-100 leading-[0.95]">
+            {/* Headline — Narrative / Sans-Serif */}
+            <h2 className="font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-neutral-900 dark:text-neutral-100 leading-[0.95]">
               {portfolioData.about.headline}
             </h2>
-            <p className="mt-8 md:mt-12 text-base md:text-lg leading-relaxed text-neutral-500 dark:text-neutral-400 max-w-2xl">
+            {/* Description / Bio — Narrative / Sans-Serif */}
+            <p className="font-sans mt-8 md:mt-12 text-base md:text-lg leading-relaxed tracking-tight text-neutral-500 dark:text-neutral-400 max-w-2xl">
               {portfolioData.about.description}
             </p>
             <motion.div

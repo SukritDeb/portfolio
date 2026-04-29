@@ -25,12 +25,12 @@ export default function Projects() {
   return (
     <section id="work" className="py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        {/* Section Header */}
+        {/* Section Header — Machine / Monospace */}
         <div className="flex items-baseline justify-between mb-16 md:mb-20">
-          <h2 className="text-xs uppercase tracking-widest text-neutral-400 dark:text-neutral-500 font-mono">
+          <h2 className="font-mono text-xs uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
             Selected Projects
           </h2>
-          <span className="text-xs font-mono text-neutral-300 dark:text-neutral-700">
+          <span className="font-mono text-xs uppercase tracking-widest text-neutral-300 dark:text-neutral-700">
             ({String(portfolioData.projects.length).padStart(2, "0")})
           </span>
         </div>
@@ -52,14 +52,17 @@ export default function Projects() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8">
                 {/* Left Side */}
                 <div className="flex items-baseline gap-6 md:gap-10 flex-1">
-                  <span className="text-xs font-mono text-neutral-300 dark:text-neutral-700 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 transition-colors">
+                  {/* Project ID — Machine / Monospace */}
+                  <span className="font-mono text-xs uppercase tracking-widest text-neutral-300 dark:text-neutral-700 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 transition-colors">
                     {project.id}
                   </span>
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 group-hover:translate-x-2 transition-transform duration-300">
+                    {/* Project Title — Narrative / Sans-Serif */}
+                    <h3 className="font-sans text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 group-hover:translate-x-2 transition-transform duration-300">
                       {project.title}
                     </h3>
-                    <p className="mt-1 text-sm text-neutral-400 dark:text-neutral-500 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors">
+                    {/* Project Description — Narrative / Sans-Serif */}
+                    <p className="font-sans mt-1 text-sm tracking-tight text-neutral-400 dark:text-neutral-500 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors">
                       {project.description}
                     </p>
                   </div>
@@ -68,14 +71,16 @@ export default function Projects() {
                 {/* Right Side */}
                 <div className="flex items-center gap-6">
                   <div className="flex flex-col items-start md:items-end gap-3 md:min-w-[280px]">
-                    <span className="text-xs font-medium text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">
+                    {/* Impact — Machine / Monospace */}
+                    <span className="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
                       {project.impact}
                     </span>
+                    {/* Tech Stack Tags — Machine / Monospace */}
                     <div className="flex flex-wrap gap-2">
                       {project.tech_stack.map((tech) => (
                         <span
                           key={tech}
-                          className="text-[10px] font-mono uppercase tracking-widest px-3 py-1 border border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 group-hover:border-neutral-900 dark:group-hover:border-neutral-100 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 transition-all"
+                          className="font-mono text-[10px] uppercase tracking-widest px-3 py-1 border border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 group-hover:border-neutral-900 dark:group-hover:border-neutral-100 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 transition-all"
                         >
                           {tech}
                         </span>

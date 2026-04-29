@@ -24,10 +24,10 @@ export default function Marquee() {
         {duplicated.map((skill, index) => (
           <span
             key={index}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-neutral-200 dark:text-neutral-800 flex items-center gap-8 md:gap-12 select-none"
+            className="font-mono text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase tracking-widest text-neutral-200 dark:text-neutral-800 flex items-center gap-8 md:gap-12 select-none"
           >
             {skill}
-            <span className="text-neutral-300 dark:text-neutral-700 text-2xl">
+            <span className="text-neutral-300 dark:text-neutral-700 text-lg">
               ◆
             </span>
           </span>

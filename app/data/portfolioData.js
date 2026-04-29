@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal_info: {
     name: "Sukrit Deb.",
-    role: "An explorer of the realm of AI, Agentic systems and ML",
+    role: "An explorer of latent spaces. Predicting the future isn't magic—it's just math, clean data, and autonomous architecture. I build intelligent systems that anticipate chaos, from disaster mitigation to DevOps, and craft visual identities that give those systems a soul.",
     location: "Baidyabati, West Bengal",
     availability: "Available for roles in ML & Agentic AI",
     email: "[EMAIL_ADDRESS]",
@@ -75,7 +75,7 @@ export const portfolioData = {
   about: {
     headline: "Predicting the future isn't magic",
     description:
-      "An explorer of latent spaces. Predicting the future isn't magic — it's just math, clean data and autonomous architecture. So why not use it to solve real world problems?",
+      "An explorer of latent spaces. Predicting the future isn't magic—it's just math, clean data, and autonomous architecture. I build intelligent systems that anticipate chaos, from disaster mitigation to DevOps, and craft visual identities that give those systems a soul.",
   },
   social_links: {
     linkedin: "https://www.linkedin.com/in/sukritdeb/",

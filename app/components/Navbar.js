@@ -35,11 +35,12 @@ export default function Navbar() {
 
         {/* Right — Links + Toggle */}
         <div className="flex items-center gap-8">
+          {/* Nav Links — Machine / Monospace */}
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="hidden md:block text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="hidden md:block font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
             >
               {link.label}
             </a>
