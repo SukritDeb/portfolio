@@ -19,6 +19,14 @@ export const portfolioData = {
   projects: [
     {
       id: "01",
+      title: "Veritas-Agent",
+      description: "Multi-agent AI pipeline that autonomously verifies breaking news headlines using three specialized LLM agents — Researcher, Fact-Checker, and Editor — with a Streamlit web interface.",
+      impact: "",
+      tech_stack: ["Agentic AI", "Python", "Groq", "LLaMA 3.3", "Tavily API", "Streamlit"],
+      github: "https://github.com/SukritDeb/veritas",
+    },
+    {
+      id: "02",
       title: "GLOF Predictor",
       description: "Disaster-mitigation ML system",
       impact: "Best Innovation @ Hack Technique",
@@ -26,7 +34,7 @@ export const portfolioData = {
       github: "https://github.com/SukritDeb/glof-predictor",
     },
     {
-      id: "02",
+      id: "03",
       title: "SlothOps",
       description: "Autonomous SRE agent",
       impact: "1st Place @ Binary S2 Hackathon",
@@ -34,7 +42,7 @@ export const portfolioData = {
       github: "https://github.com/SukritDeb/SlothOps-Binary",
     },
     {
-      id: "03",
+      id: "04",
       title: "InsurancePRO",
       description: "End-to-end predictive service for insurance premiums",
       impact: "Deployed Application",
@@ -42,7 +50,7 @@ export const portfolioData = {
       github: "https://github.com/SukritDeb/Insurance_premium_predictor_API",
     },
     {
-      id: "04",
+      id: "05",
       title: "Smart Attend",
       description: "Facial recognition attendance system",
       impact: "Core Development",
