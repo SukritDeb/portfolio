@@ -72,9 +72,11 @@ export default function Projects() {
                 <div className="flex items-center gap-6">
                   <div className="flex flex-col items-start md:items-end gap-3 md:min-w-[280px]">
                     {/* Impact — Machine / Monospace */}
-                    <span className="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
-                      {project.impact}
-                    </span>
+                    {project.impact && (
+                      <span className="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+                        {project.impact}
+                      </span>
+                    )}
                     {/* Tech Stack Tags — Machine / Monospace */}
                     <div className="flex flex-wrap gap-2">
                       {project.tech_stack.map((tech) => (
